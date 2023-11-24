@@ -24,38 +24,31 @@
             System.Media.SoundPlayer a = new System.Media.SoundPlayer(@"c:\A.wav");
             string voice = noVoice.Text;
             int count = voice.Length;
-            int sp = 350;
+            int sp = 0;
             for (int ji = 0; ji < count; ji++)
             {
                 switch (voice[ji])
                 {
                     case ' ':
+                        Thread.Sleep(750);
                         break;
                     case 'ა':
-
-                        a.Play();
+                        a.PlaySync();
                         break;
                     case 'ბ':
-                        b.Play();
+                        b.PlaySync();
                         break;
                     case 'გ':
-
-                        g.Play();
+                        g.PlaySync();
                         break;
                     case 'დ':
 
-                        d.Play();
+                        d.PlaySync();
                         break;
                     case 'ე':
-                        ea.Play();
-                        Thread.Sleep(150);
-
+                        ea.PlaySync();
                         break;
-                        
-
                 }
-                cooloff(sp);
-
             }
         }
     }
@@ -193,4 +186,3 @@
                              System.Media.SoundPlayer h = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
                              h.Play();
                              break;*/
-*/
