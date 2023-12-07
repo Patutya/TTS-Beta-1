@@ -27,6 +27,7 @@
             int sp = 0;
             for (int ji = 0; ji < count; ji++)
             {
+                
                 switch (voice[ji])
                 {
                     case ' ':
@@ -42,13 +43,13 @@
                         g.PlaySync();
                         break;
                     case 'დ':
-
                         d.PlaySync();
                         break;
                     case 'ე':
                         ea.PlaySync();
                         break;
                 }
+                //Thread.Sleep(5000);
             }
         }
     }
