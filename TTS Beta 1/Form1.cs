@@ -12,23 +12,57 @@
             do
             {
                 Application.DoEvents();
-            } while (Tthen.AddMilliseconds(millisecs) > DateTime.Now);
+            } 
+            while (Tthen.AddMilliseconds(millisecs) > DateTime.Now);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer v = new System.Media.SoundPlayer(@"c:\V.wav");
             System.Media.SoundPlayer g = new System.Media.SoundPlayer(@"c:\G.wav");
             System.Media.SoundPlayer d = new System.Media.SoundPlayer(@"c:\D.wav");
             System.Media.SoundPlayer ea = new System.Media.SoundPlayer(@"c:\E.wav");
             System.Media.SoundPlayer b = new System.Media.SoundPlayer(@"c:\B.wav");
             System.Media.SoundPlayer a = new System.Media.SoundPlayer(@"c:\A.wav");
-            string voice = noVoice.Text;
-            int count = voice.Length;
+            System.Media.SoundPlayer z = new System.Media.SoundPlayer(@"c:\Z.wav");
+            System.Media.SoundPlayer th = new System.Media.SoundPlayer(@"c:\T.wav");
+            System.Media.SoundPlayer i = new System.Media.SoundPlayer(@"c:\I.wav");
+            System.Media.SoundPlayer k = new System.Media.SoundPlayer(@"c:\K.wav");
+            System.Media.SoundPlayer ky = new System.Media.SoundPlayer(@"c:\KY.wav");
+            System.Media.SoundPlayer l = new System.Media.SoundPlayer(@"c:\L.wav");
+            System.Media.SoundPlayer m = new System.Media.SoundPlayer(@"c:\M.wav");
+            System.Media.SoundPlayer n = new System.Media.SoundPlayer(@"c:\N.wav");
+            System.Media.SoundPlayer o = new System.Media.SoundPlayer(@"c:\O.wav");
+            System.Media.SoundPlayer p = new System.Media.SoundPlayer(@"c:\P.wav");
+            System.Media.SoundPlayer zh = new System.Media.SoundPlayer(@"c:\ZH.wav");
+            System.Media.SoundPlayer r = new System.Media.SoundPlayer(@"c:\R.wav");
+            System.Media.SoundPlayer s = new System.Media.SoundPlayer(@"c:\S.wav");
+            System.Media.SoundPlayer t = new System.Media.SoundPlayer(@"c:\T.wav");
+            System.Media.SoundPlayer u = new System.Media.SoundPlayer(@"c:\U.wav");
+            System.Media.SoundPlayer f = new System.Media.SoundPlayer(@"c:\F.wav");
+            System.Media.SoundPlayer q = new System.Media.SoundPlayer(@"c:\Q.wav");
+            System.Media.SoundPlayer gh = new System.Media.SoundPlayer(@"c:\GH.wav");
+            System.Media.SoundPlayer sh = new System.Media.SoundPlayer(@"c:\SH.wav");
+            System.Media.SoundPlayer ch = new System.Media.SoundPlayer(@"c:\CH.wav");
+            System.Media.SoundPlayer c = new System.Media.SoundPlayer(@"c:\C.wav");
+            System.Media.SoundPlayer dz = new System.Media.SoundPlayer(@"c:\DZ.wav");
+            System.Media.SoundPlayer w = new System.Media.SoundPlayer(@"c:\W.wav");
+            System.Media.SoundPlayer tch = new System.Media.SoundPlayer(@"c:\TCH.wav");
+            System.Media.SoundPlayer h = new System.Media.SoundPlayer(@"c:\H.wav");
+            System.Media.SoundPlayer j = new System.Media.SoundPlayer(@"c:\J.wav");
+            System.Media.SoundPlayer x = new System.Media.SoundPlayer(@"c:\X.wav");
+
+
+
+
+
+
+            string text = noVoice.Text;
+            int count = text.Length;
             int sp = 0;
             for (int ji = 0; ji < count; ji++)
             {
-                
-                switch (voice[ji])
+                switch (text[ji])
                 {
                     case ' ':
                         Thread.Sleep(750);
@@ -48,12 +82,94 @@
                     case 'ე':
                         ea.PlaySync();
                         break;
+                    case 'ვ':
+                        v.PlaySync();
+                        break;
+                    case 'ზ':
+                        z.PlaySync();
+                        break;
+                    case 'თ':
+                        th.PlaySync();
+                        break;
+                    case 'ი':
+                        i.PlaySync();
+                        break;
+                    case 'კ':
+                        k.PlaySync();
+                        break;
+                    case 'ყ':
+                        ky.PlaySync();
+                        break;
+                    case 'ლ':
+                        l.PlaySync();
+                        break;
+                    case 'მ':
+                        m.PlaySync();
+                        break;
+                    case 'ნ':
+                        n.PlaySync();
+                        break;
+                    case 'ო':
+                        o.PlaySync();
+                        break;
+                    case 'პ':
+                        p.PlaySync();
+                        break;
+                    case 'ჟ':
+                        zh.PlaySync();
+                        break;
+                    case 'რ':
+                        r.PlaySync();
+                        break;
+                    case 'ს':
+                        s.PlaySync();
+                        break;
+                    case 'ტ':
+                        t.PlaySync();
+                        break;
+                    case 'უ':
+                        u.PlaySync();
+                        break;
+                    case 'ფ':
+                        f.PlaySync();
+                        break;
+                    case 'ქ':
+                        q.PlaySync();
+                        break;
+                    case 'ღ':
+                        gh.PlaySync();
+                        break;
+                    case 'შ':
+                        sh.PlaySync();
+                        break;
+                    case 'ჩ':
+                        ch.PlaySync();
+                        break;
+                    case 'ც':
+                        c.PlaySync();
+                        break;
+                    case 'ძ':
+                        dz.PlaySync();
+                        break;
+                    case 'წ':
+                        w.PlaySync();
+                        break;
+                    case 'ჭ':
+                        tch.PlaySync();
+                        break;
+                    case 'ხ':
+                        x.PlaySync();
+                        break;
+                    case 'ჯ':
+                        j.PlaySync();
+                        break;
+                    case 'ჰ':
+                        h.PlaySync();
+                        break;
                 }
-                //Thread.Sleep(5000);
             }
         }
     }
-
 }
 
 
@@ -74,116 +190,5 @@
 
 
 
-/*
- /* case 'ვ':
-                             System.Media.SoundPlayer v = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             v.Play();
-                             break;
-                         case 'ზ':
-                             System.Media.SoundPlayer z = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             z.Play();
-                             break;
-                         case 'თ':
-                             System.Media.SoundPlayer th = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             th.Play();
-                             break;
-                         case 'ი':
-                             System.Media.SoundPlayer i = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             i.Play();
-                             break;
-                         case'კ':
-                             System.Media.SoundPlayer k = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             k.Play();
-                             break;
-                         case 'ყ':
-                             System.Media.SoundPlayer ky = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             ky.Play();
-                             break;
-                         case 'ლ':
-                             System.Media.SoundPlayer l = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             l.Play();
-                             break;
-                         case 'მ':
-                             System.Media.SoundPlayer m = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             m.Play();
-                             break;
-                         case 'ნ':
-                             System.Media.SoundPlayer n = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             n.Play();
-                             break;
-                         case 'ო':
-                             System.Media.SoundPlayer o = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             o.Play();
-                             break;
-                         case 'პ':
-                             System.Media.SoundPlayer p = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             p.Play();
-                             break;
-                         case 'ჟ':
-                             System.Media.SoundPlayer zh = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             zh.Play();
-                             break;
-                         case 'რ':
-                             System.Media.SoundPlayer r = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             r.Play();
-                             break;
-                         case 'ს':
-                             System.Media.SoundPlayer s = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             s.Play();
-                             break;
-                         case 'ტ':
-                             System.Media.SoundPlayer t = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             t.Play();
-                             break;
-                         case 'უ':
-                             System.Media.SoundPlayer u = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             u.Play();
-                             break;
-                         case 'ფ':
-                             System.Media.SoundPlayer f = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             f.Play();
-                             break;
-                         case 'ქ':
-                             System.Media.SoundPlayer q = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             q.Play();
-                             break;
-                         case 'ღ':
-                             System.Media.SoundPlayer gh = new System.Media.SoundPlayer(@"c:\mywavfil e.wav");
-                             gh.Play();
-                             break;
-                         case 'შ':
-                             System.Media.SoundPlayer sh = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             sh.Play();
-                             break;
-                         case 'ჩ':
-                             System.Media.SoundPlayer ch = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             ch.Play();
-                             break;
-                         case 'ც':
-                             System.Media.SoundPlayer c = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             c.Play();
-                             break;
-                         case 'ძ':
-                             System.Media.SoundPlayer dz = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             dz.Play();
-                             break;
-                         case 'წ':
-                             System.Media.SoundPlayer w = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             w.Play();
-                             break;
-                         case 'ჭ':
-                             System.Media.SoundPlayer tch = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             tch.Play();
-                             break;
-                         case 'ხ':
-                             System.Media.SoundPlayer x = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             x.Play();
-                             break;
-                         case 'ჯ':
-                             System.Media.SoundPlayer j = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             j.Play();
-                             break;
-                         case 'ჰ':
-                             System.Media.SoundPlayer h = new System.Media.SoundPlayer(@"c:\mywavfile.wav");
-                             h.Play();
-                             break;*/
+
+
